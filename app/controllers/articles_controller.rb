@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
     article = Article.find(params[:id])
     article.destroy
     @articles = Article.all
-    redirect_to :back
+    redirect_to :back #redirect_to articles_path
   end
 
   private
