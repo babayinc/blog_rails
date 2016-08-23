@@ -1,4 +1,4 @@
-class Article < ActiveRecord::Base
+class Article < ApplicationRecord
 
   validates :title, presence: true
   validates :text, presence: true
@@ -8,8 +8,4 @@ class Article < ActiveRecord::Base
     title
   end
   
-  def last_comment
-    comments.last
-  end
-
 end
